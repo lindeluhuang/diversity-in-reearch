@@ -1,0 +1,121 @@
+
+
+/* ---------------- Basic Styles ---------------- */
+body {
+    font-family: "Muli", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", cursive;
+}
+
+h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-top: .7em;
+}
+
+footer {
+    background: grey;
+    padding: 30px 0;
+    color: white;
+}
+
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+
+.img-half {
+    object-fit: cover;
+    width: 100vw;
+    height: 500px;
+}
+@media (min-width: 768px) { 
+    .img-half { 
+        width: 50vw; 
+    }
+}
+
+.img-full {
+    object-fit: cover;
+    width: 100vw;
+    height: 500px;
+}
+@media (min-width: 1200px) { 
+    .img-full { 
+        height: 400px;
+    }
+}
+
+
+
+
+.main-explanations {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0 1.5em;
+}
+@media (min-width: 768px) { 
+    .main-explanations { 
+        margin: 0;
+        padding: 0 2em;
+    }
+}
+@media (min-width: 992px) { 
+    .main-explanations { 
+        padding: 0 5em;
+    }
+}
+@media (min-width: 1200px) { 
+    .main-explanations { 
+        padding: 0 8em;
+    }
+}
+
+
+/* ---------------- Jumbotron ---------------- */
+
+.jumbotron {
+    padding: 30px;
+    background-image: url('../images/img-hero.png');
+    background-size: cover;
+    margin: 0;
+    height: 600px;
+    background-color: white;
+}
+
+.vertical-align {
+  display:0;
+  display:flex;
+  -webkit-align-items:flex-end;
+  align-items:flex-end;
+}
+
+
+/* ---------------- Navigation ---------------- */
+.navbar {
+    background-color: #901CAD;
+}
+
+
+
+
+.color-bar {
+    height: 10px;
+}
+
+.green-bar {
+    background-color: #8CC63F;
+}
+
+.orange-bar {
+    background-color: #FCB040;
+}
+
+.blue-bar {
+    background-color: #24AAE1;
+}
+
