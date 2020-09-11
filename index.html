@@ -11,7 +11,7 @@
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Playfair+Display:wght@700|Mulih:wght@400;700&display=swap" />
+        href="https://fonts.googleapis.com/css?family=Playfair+Display:wght@700|Mulish:wght@400;700|Caveat:wght@700&display=swap" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
@@ -24,21 +24,31 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Diversity in Research</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-en" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-autod">
-                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
-                <button class="btn btn-outline-success" type="button">Get Involved</button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="aboutus.html">About</a>
+              </li>
             </ul>
+            <button type="button" class="btn button-primary" href="">Get Involved</button>
+          </div>
         </div>
+
     </nav>
 
+
     <div class="row color-bar green-bar"></div>
+    
 
     <div class="jumbotron jumbotron-fluid vertical-align">
         <div class="container-fluid">
@@ -49,6 +59,15 @@
 
     <div class="row color-bar orange-bar"></div>
 
+    <div class="align-self-center main-explanations">
+        <p>
+            It's not often in life that you can impact someone's 
+            <br>life for the better. Maybe this is how
+        </p>
+        <p>
+            we can make a difference.
+        </p>
+    </div>
 
     <div class="row color-bar blue-bar"></div>
 
@@ -138,7 +157,7 @@
                     We want to empower everyone with awareness and access to health research. Click on the
                     button below to get involved.
                 </p>
-                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn button-primary" href="">Get Involved</button>
             </div>
         </div>
 
