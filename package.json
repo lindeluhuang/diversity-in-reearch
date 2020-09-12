@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lindeluhuang/diversity-in-reearch.git"
+    "url": "git+https://github.com/lindeluhuang/diversity-in-research.git"
   },
   "author": "Linde Huang",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lindeluhuang/diversity-in-reearch/issues"
+    "url": "https://github.com/lindeluhuang/diversity-in-research/issues"
   },
-  "homepage": "https://github.com/lindeluhuang/diversity-in-reearch#readme",
+  "homepage": "https://github.com/lindeluhuang/diversity-in-research#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
   },
