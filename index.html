@@ -6,13 +6,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" sizes="16x16">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Playfair+Display:wght@700|Mulish:wght@400;700|Caveat:wght@700&display=swap" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
     <link rel="stylesheet" href="css/styles.css" />
@@ -23,7 +26,8 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Diversity in Research</a>
+        <a class="navbar-brand relative" href="#"><img src="images/logo.png" class="nav-logo" alt="logo" width="35"
+                height="35"> Diversity in Research</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,54 +35,64 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link"  href="aboutus.html">About</a>
-              </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html">About</a>
+                </li>
             </ul>
             <button type="button" class="btn button-primary" href="">Get Involved</button>
-          </div>
+        </div>
         </div>
 
     </nav>
 
 
     <div class="row color-bar green-bar"></div>
-    
+
 
     <div class="jumbotron jumbotron-fluid vertical-align">
         <div class="container-fluid">
-            <h1 class="display-4 text-center">Diversity in Clinical Research</h1>
-            <p class="lead text-center">More people involved in research today means better health for all of us tomorrow</p>
+            <h1 class="display-4 text-center"> Diversity in Clinical Research</h1>
+            <p class="lead text-center">More people involved in research today means better health for all of us
+                tomorrow</p>
         </div>
     </div>
 
     <div class="row color-bar orange-bar"></div>
 
-    <div class="align-self-center main-explanations">
-        <p>
-            It's not often in life that you can impact someone's 
-            <br>life for the better. Maybe this is how
-        </p>
-        <p>
-            we can make a difference.
-        </p>
+    <div class="container m-5 mx-auto">
+        <div class="row">
+            <div class="col-3">
+                <p class="text-right pull-quote-quote"> &ldquo; </p>
+            </div>
+            <div class="col-7">
+                <p class="pull-quote-body">
+                    It's not often in life that you can impact someone's life for the better. Maybe this is how
+                </p>
+            </div>
+        </div>
+        <div class="row pull-quote-row">
+            <div class="offset-1 col col-md-8 offset-md-4">
+                <p class="pull-quote-highlight">
+                    <mark>we can make a difference.</mark>
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="row color-bar blue-bar"></div>
 
     <div class="container-fluid">
 
-
         <div class="row align-items-center">
             <div class="col-12 col-md-6 no-padding">
                 <img class="img-half" src="images/img-1.jpg" alt="Doctor and patient" />
             </div>
-            <div class="align-self-center col-md-6 main-explanations">
+            <div class="align-self-center col-md-6 main-explanations my-5">
                 <h3>What is clinical research?</h3>
                 <h4>Clinical research trials are research studies to find ways to prevent, treat, and cure illness.
                 </h4>
@@ -87,14 +101,26 @@
                     clinical
                     research trials. They are the primary way researchers learn if a new treatment is effective and
                     safe.
-                </p>
-                <p>Learn More
-                </p>
-                <ul>
-                    <li>What is Clinical Research? (Video)</li>
-                    <li>What is Research? (Website)</li>
-                    <li>About Clinical Studies (Article)</li>
-                </ul>
+
+                <div class="accordion" id="learnMoreWhat">
+                    <div class="card learn-more-card">
+                        <h2 class="mb-0">
+                            <button class="btn collapsed learn-more-button" type="button" data-toggle="collapse"
+                                data-target="#collapseLearnMore1" aria-expanded="false"
+                                aria-controls="collapseLearnMore1">
+                                Learn More <i class="icon-chevron-down chevron"></i>
+                            </button>
+                        </h2>
+                        <div id="collapseLearnMore1" class="collapse" aria-labelledby="heading1"
+                            data-parent="#learnMoreWhat">
+                            <ul class="more-links-container">
+                                <li>What is Clinical Research? (Video)</li>
+                                <li>What is Research? (Website)</li>
+                                <li>About Clinical Studies (Article)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -106,10 +132,39 @@
             </div>
         </div>
 
+
+        <div class="container m-5 mx-auto">
+            <div class="row">
+                <div class="col-3">
+                    <p class="text-right pull-quote-quote"> &ldquo; </p>
+                </div>
+                <div class="col">
+                    <p class="pull-quote-body">
+                        Someone helped me get the
+                    </p>
+                </div>
+            </div>
+            <div class="row pull-quote-row">
+                <div class="offset-1 col offset-md-5 col-md-7">
+                    <p class="pull-quote-highlight reduced-margin-bottom">
+                        <mark>medication I need today</mark>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-4 col">
+                    <p class="pull-quote-body">
+                        by participating in a study 20 years ago.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row color-bar orange-bar"></div>
 
         <div class="row align-items-center">
-            <div class="align-self-center col-md-6 main-explanations">
+            <div class="align-self-center col-md-6 main-explanations my-5">
                 <h3>Why is diversity in research important?</h3>
                 <h4>Medicines can have a different effect based on gender, race and ethnicity. </h4>
                 <p>
@@ -119,13 +174,27 @@
                     can be
                     applied to all people equally.
                 </p>
-                <p>Learn More
-                </p>
-                <ul>
-                    <li>Importance of Diversity (Website)</li>
-                    <li>Diversity in Research Participation (Video)</li>
-                    <li>Minority Voices (Article)</li>
-                </ul>
+
+                <div class="accordion" id="learnMoreWhat">
+                    <div class="card learn-more-card">
+                        <h2 class="mb-0">
+                            <button class="btn collapsed learn-more-button" type="button" data-toggle="collapse"
+                                data-target="#collapseLearnMore1" aria-expanded="false"
+                                aria-controls="collapseLearnMore1">
+                                Learn More <i class="icon-chevron-down chevron"></i>
+                            </button>
+                        </h2>
+                        <div id="collapseLearnMore1" class="collapse" aria-labelledby="heading1"
+                            data-parent="#learnMoreWhat">
+                            <ul class="more-links-container">
+                                <li>Importance of Diversity (Website)</li>
+                                <li>Diversity in Research Participation (Video)</li>
+                                <li>Minority Voices (Article)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-md-6 no-padding">
                 <img class="img-half" src="images/img-3.png" alt="Mother and father with baby" />
@@ -141,6 +210,31 @@
             </div>
         </div>
 
+        <div class="container m-5 mx-auto">
+            <div class="row">
+                <div class="offset-3 offset-sm-4 offset-md-6 col-md-6">
+                    <p class="pull-quote-body">
+                        As a community
+                    </p>
+                </div>
+            </div>
+            <div class="row pull-quote-row">
+                <div class="offset-1 offset-sm-2 offset-md-4 col-md-8">
+                    <p class="pull-quote-highlight reduced-margin-bottom">
+                        <mark>we are they key</mark>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-2 offset-sm-3 offset-md-5 col-md-7">
+                    <p class="pull-quote-body">
+                        to moving medicine forward.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
         <div class="row color-bar green-bar"></div>
 
 
@@ -148,7 +242,7 @@
             <div class="col-md-6 no-padding">
                 <img class="img-half" src="images/img-5.png" alt="Mother with young daughter" />
             </div>
-            <div class="align-self-center col-md-6 main-explanations">
+            <div class="align-self-center col-md-6 main-explanations  my-5">
                 <h3>How can I get involved?</h3>
                 <h4>We created UMHealthResearch to connect volunteers with research opportunities at the
                     University
@@ -167,7 +261,7 @@
 
     <footer class="site-footer">
         <div class="container-fluid">
-            <p class="text-center">&#169; 2020 
+            <p class="text-center">&#169; 2020
                 <br>Designed and Developed by Linde Huang</p>
         </div>
     </footer>

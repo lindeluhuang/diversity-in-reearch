@@ -1,6 +1,4 @@
-
-
-/* ---------------- Basic Styles ---------------- */
+/* ---------------- Text ---------------- */
 body {
     font-family: "Mulish", sans-serif;
 }
@@ -17,14 +15,24 @@ h4 {
     font-size: 1.2em;
     font-weight: 700;
     padding-top: .7em;
+    line-height: 1.4em;
 }
 
-footer {
-    background: grey;
-    padding: 30px 0;
-    color: white;
+.lead {
+    font-size: 2em;
+    color: black;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+@media (min-width: 768px) { 
+    .lead { 
+        width: 50vw;
+        margin: auto;
+    }
 }
 
+
+/* ---------------- Button ---------------- */
 .button-primary {
     border-radius:20em;
     background-color: #92278F;
@@ -41,7 +49,7 @@ footer {
 
 }
 
-
+/* ---------------- Images ---------------- */
 .no-padding {
     padding-left: 0;
     padding-right: 0;
@@ -67,41 +75,6 @@ footer {
 @media (min-width: 1200px) { 
     .img-full { 
         height: 400px;
-    }
-}
-
-
-
-
-.main-explanations {
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding: 0 1.5em;
-}
-@media (min-width: 768px) { 
-    .main-explanations { 
-        margin: 0;
-        padding: 0 3em;
-    }
-}
-@media (min-width: 992px) { 
-    .main-explanations { 
-        padding: 0 5em;
-    }
-}
-@media (min-width: 1200px) { 
-    .main-explanations { 
-        padding: 0 8em;
-    }
-}
-
-.form-spacing {
-    padding: 0 1.5em;
-}
-@media (min-width: 768px) { 
-    .form-spacing { 
-        margin: 0;
-        padding:0;
     }
 }
 
@@ -135,6 +108,12 @@ footer {
 }
 
 
+.nav-logo {
+    margin-right: 10px;
+}
+
+
+/* ---------------- Color Bars ---------------- */
 .color-bar {
     height: 10px;
 }
@@ -151,3 +130,127 @@ footer {
     background-color: #24AAE1;
 }
 
+
+/* ---------------- Pull Quotes ---------------- */
+
+.pull-quote-quote {
+    font-size: 200px;
+    font-family: "Playfair Display", serif;
+    color: #901CAD;
+    opacity: 0.5;
+    margin-top: -80px;
+    margin-bottom: -250px;
+}
+
+.pull-quote-body {
+    font-size: 1.3em;
+    line-height: 2em;
+    padding-top: 22px;
+}
+
+.pull-quote-highlight { 
+    font-size: 2em;
+    margin-top: -10px;
+}
+@media (min-width: 768px) { 
+    .pull-quote-highlight { 
+        font-size: 3em;
+        margin-top: -30px;
+    }
+}
+
+.reduced-margin-bottom {
+    margin-bottom: -25px;
+}
+
+mark {
+    font-family: "Caveat", cursive;
+    background-color:#DEBEDD;
+}
+@media (min-width: 768px) { 
+    mark { 
+        display: inline-block;
+        line-height: 0em;
+        padding-bottom: 0.5em;
+        padding-top:0;
+    }
+}
+
+
+/* ---------------- Explanations ---------------- */
+.main-explanations {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0 1.5em;
+}
+@media (min-width: 768px) { 
+    .main-explanations { 
+        margin: 0;
+        padding: 0 3em;
+    }
+}
+@media (min-width: 992px) { 
+    .main-explanations { 
+        padding: 0 5em;
+    }
+}
+@media (min-width: 1200px) { 
+    .main-explanations { 
+        padding: 0 8em;
+    }
+}
+
+.form-spacing {
+    padding: 0 1.5em;
+}
+@media (min-width: 768px) { 
+    .form-spacing { 
+        margin: 0;
+        padding:0;
+    }
+}
+
+
+/* ---------------- Learn More ---------------- */
+.learn-more-card {
+    border: 0px;
+}
+
+.learn-more-button {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+}
+.learn-more-button:focus {
+    box-shadow: 0 0 0 0;
+}
+
+.chevron {
+    margin-left: 6px;
+    opacity: 0.8;
+}
+
+.more-links-container {
+    padding-top: .8em;
+}
+
+
+.about-pic {
+    object-fit: cover;
+    width: 100vw;
+    height: 300px;
+}
+@media (min-width: 1200px) { 
+    .about-pic { 
+        height: 200px;
+    }
+}
+
+
+/* ---------------- Footer ---------------- */
+footer {
+    background: grey;
+    padding: 30px 0;
+    color: white;
+}
