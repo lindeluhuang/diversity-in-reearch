@@ -18,6 +18,10 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
 
+  <!-- Scroll animations -->  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Diversity in Research</title>
@@ -40,11 +44,11 @@
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item item-last">
                     <a class="nav-link" href="aboutus.html">About</a>
                 </li>
             </ul>
-            <button type="button" class="btn button-primary" href="">Get Involved</button>
+            <a href="http://umhealthresearch.com/" target="_blank"><button type="button" class="btn button-primary">Get Involved</button></a>
         </div>
         </div>
 
@@ -64,7 +68,7 @@
 
     <div class="row color-bar orange-bar"></div>
 
-    <div class="container m-5 mx-auto">
+    <div class="container m-5 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
         <div class="row">
             <div class="col-3">
                 <p class="text-right pull-quote-quote"> &ldquo; </p>
@@ -114,9 +118,9 @@
                         <div id="collapseLearnMore1" class="collapse" aria-labelledby="heading1"
                             data-parent="#learnMoreWhat">
                             <ul class="more-links-container">
-                                <li>What is Clinical Research? (Video)</li>
-                                <li>What is Research? (Website)</li>
-                                <li>About Clinical Studies (Article)</li>
+                                <li><a href="https://www.youtube.com/watch?v=-vDTnrFm3AQ" target="_blank">What is Clinical Research?</a> (Video)</li>
+                                <li><a href="https://buildingtrustumd.org/unit/importance-of-research/what-is-research" target="_blank">What is Research?</a> (Website)</li>
+                                <li><a href="https://www.mayo.edu/research/clinical-trials/about-clinical-studies" target="_blank">About Clinical Studies</a> (Article)</li>
                             </ul>
                         </div>
                     </div>
@@ -133,7 +137,7 @@
         </div>
 
 
-        <div class="container m-5 mx-auto">
+        <div class="container m-5 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
             <div class="row">
                 <div class="col-3">
                     <p class="text-right pull-quote-quote"> &ldquo; </p>
@@ -179,17 +183,18 @@
                     <div class="card learn-more-card">
                         <h2 class="mb-0">
                             <button class="btn collapsed learn-more-button" type="button" data-toggle="collapse"
-                                data-target="#collapseLearnMore1" aria-expanded="false"
-                                aria-controls="collapseLearnMore1">
+                                data-target="#collapseLearnMore2" aria-expanded="false"
+                                aria-controls="collapseLearnMore2">
                                 Learn More <i class="icon-chevron-down chevron"></i>
                             </button>
+
                         </h2>
-                        <div id="collapseLearnMore1" class="collapse" aria-labelledby="heading1"
+                        <div id="collapseLearnMore2" class="collapse" aria-labelledby="heading2"
                             data-parent="#learnMoreWhat">
                             <ul class="more-links-container">
-                                <li>Importance of Diversity (Website)</li>
-                                <li>Diversity in Research Participation (Video)</li>
-                                <li>Minority Voices (Article)</li>
+                                <li><a href="https://buildingtrustumd.org/unit/importance-of-research/importance-of-diversity" target="_blank">Importance of Diversity</a> (Website)</li>
+                                <li><a href="https://recruit.ucsf.edu/diversity-research-participation-why-its-important" target="_blank">Diversity in Research Participation</a> (Video)</li>
+                                <li><a href="https://ftdregistry.org/press/minority-voices-ensuring-racial-and-cultural-diversity-research-0" target="_blank">Minority Voices</a> (Article)</li>
                             </ul>
                         </div>
                     </div>
@@ -210,7 +215,7 @@
             </div>
         </div>
 
-        <div class="container m-5 mx-auto">
+        <div class="container m-5 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
             <div class="row">
                 <div class="offset-3 offset-sm-4 offset-md-6 col-md-6">
                     <p class="pull-quote-body">
@@ -251,7 +256,7 @@
                     We want to empower everyone with awareness and access to health research. Click on the
                     button below to get involved.
                 </p>
-                <button type="button" class="btn button-primary" href="">Get Involved</button>
+                <a href="http://umhealthresearch.com/" target="_blank"><button type="button" class="btn button-primary">Get Involved</button></a>
             </div>
         </div>
 
@@ -270,6 +275,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 
