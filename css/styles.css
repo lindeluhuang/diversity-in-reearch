@@ -100,7 +100,12 @@ h4 {
 
 /* ---------------- Navigation ---------------- */
 .navbar {
-    background-color: #901CAD;
+    background-color:white;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4em;
 }
 
 .nav-item {
@@ -117,8 +122,20 @@ h4 {
     margin-right: 10px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    right:0;
+    left: 0;
+    z-index: 2;
+  }
+
 
 /* ---------------- Color Bars ---------------- */
+.top-div {
+    margin-top: 68px;
+}
+
 .color-bar {
     height: 10px;
 }
